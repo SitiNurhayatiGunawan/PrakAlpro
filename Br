@@ -1,0 +1,38 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+struct player_t{
+	string name;
+	string Address;
+	string Hobby;
+};
+
+int main(){
+	player_t player[] = {
+		{
+			"Siti", "Bandung", "fighting",
+		},
+		{
+			"Nurhayati", "Sumedang", "Badminton",
+		},
+		{
+			"Gunawan", "Pangalengan", "Basketball",
+		},
+		{
+			"Uka", "Ciwidey", "fighting",
+		},
+	};
+	
+	cout << "Who is player fighting?\n\n";
+	
+	for (int i = 0; i < 4; i++){
+		if (player[i].Hobby == "fighting"){
+			cout << player[i].name << endl;
+			break;
+		}
+		
+	}
+	
+	return 0;
+}
