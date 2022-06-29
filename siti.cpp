@@ -1,4 +1,6 @@
-  #include <iostream>
+// Tugas UAS Game
+
+#include <iostream>
 #include <conio.h>
 #include <time.h>
 #include <stdlib.h>
