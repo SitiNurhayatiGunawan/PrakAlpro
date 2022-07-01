@@ -1,5 +1,3 @@
-// Tugas UAS Game
-
 #include <iostream>
 #include <conio.h>
 #include <time.h>
@@ -10,7 +8,7 @@ using namespace std;
 
 //function
 char getInput (int posisix, int posisiy) {
-	cout << "\ \"a\" \"d\" w\"s\" \" untuk menggerakkan mario] [& = MARIO] ";
+	cout << "\ \"a\" \"d\" w\"s\" \" untuk menggerakkan mario] [& = MARIO] [x = MUSUH] [* = Point]";
 	cout<<endl<<"posisi x = "<<posisix<<" posisi y = "<<posisiy;
   char input=getch();
   return input;
@@ -23,14 +21,14 @@ struct Data {
 } data;
 int main()
 {
- data.nama = "Siti Nurhayati Gunawan ";
+ data.nama = "SITI NURHAYATI GUNAWAN ";
  data.nim = "1217050135";
  data.kelas = "PrakAlpro G";		
  int x,y,posisix,posisiy;
  char input;
  int point = 0 ;
  
-
+ string dir = "";
 
 //pointer
 char *arah[4];
@@ -67,13 +65,13 @@ char *arah[4];
  
 };
  while(input != 'x'){
-  cout<<"\t\t(MARIO MENCARI KOIN)"<<endl;
-  cout<<"\t\t "<<data.nama << endl;
-  cout<<"\t\t "<<data.nim  << endl;
-  cout<<"\t\t "<<data.kelas << endl;
+  cout<<"\t\t				(-----MARIO MENCARI POINT-----)"<<endl;
+  cout<<"\t\t 	"<<data.nama << endl;
+  cout<<"\t\t 		"<<data.nim  << endl;
+  cout<<"\t\t			"<<data.kelas << endl;
   cout<< "Point : "<< point<<endl;
   
-   //lopping unuk draw map
+   //lopping untuk draw map
   for (x=0;x<xmap;x++){
    for (y=0;y<ymap;y++){
     if (map[x][y]==1){
